@@ -1,6 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kerbal Autoland Mechanisms", "Kerbal Autoland Mechanisms.csproj", "{C35C9A47-BB62-4373-8708-496CBF1D207C}"
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30114.105
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kerbal Autoland Mechanisms", "Kerbal Autoland Mechanisms.csproj", "{9CE50175-C8A5-4EA7-A1DF-57CB0FD3B3CE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -8,9 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{C35C9A47-BB62-4373-8708-496CBF1D207C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C35C9A47-BB62-4373-8708-496CBF1D207C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C35C9A47-BB62-4373-8708-496CBF1D207C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C35C9A47-BB62-4373-8708-496CBF1D207C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9CE50175-C8A5-4EA7-A1DF-57CB0FD3B3CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9CE50175-C8A5-4EA7-A1DF-57CB0FD3B3CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9CE50175-C8A5-4EA7-A1DF-57CB0FD3B3CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9CE50175-C8A5-4EA7-A1DF-57CB0FD3B3CE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {52EC4988-0EDD-4BC8-8E73-A535B28A57DC}
 	EndGlobalSection
 EndGlobal
