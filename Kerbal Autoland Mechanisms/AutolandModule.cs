@@ -1,10 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using UnityEngine;
-using KSP;
-using KSP.UI;
 using System.Collections;
-using KAMUIAssembely;
+
+using UnityEngine;
 
 namespace Kerbal_Autoland_Mechanisms
 {
@@ -14,7 +11,7 @@ namespace Kerbal_Autoland_Mechanisms
 
         public VesselAutopilot auto;
 
-        public KAMUIController uiController;
+        //public KAMUIController uiController;
 
         private new void Start()
         {
@@ -22,14 +19,13 @@ namespace Kerbal_Autoland_Mechanisms
             if (!vessel.isActiveVessel)
                 Destroy(this);
 
-            string path = KSPUtil.ApplicationRootPath + "GameData/YourMod/PrefabFolder";
+            //string path = KSPUtil.ApplicationRootPath + "GameData/YourMod/PrefabFolder";
 
-            AssetBundle prefabs = AssetBundle.LoadFromFile(path + "/your_bundle_name");
-
-            uiController = Instantiate(prefabs.LoadAsset("Your_Prefab_Name") as GameObject).GetComponent<KAMUIController>();
+            //AssetBundle prefabs = AssetBundle.LoadFromFile(path + "/your_bundle_name");
+            // uiController = Instantiate(prefabs.LoadAsset("Your_Prefab_Name") as GameObject).GetComponent<KAMUIController>();
         }
-       private void Update()
-       {
+        private void Update()
+        {
             if (ExtendedInput.GetKeyDown(new KeyCodeExtended(KeyCode.H)))
             {
                 if (running)
@@ -37,12 +33,11 @@ namespace Kerbal_Autoland_Mechanisms
                 else
                     StartCoroutine(SuborbitalUntargeted());
             }
-       }
-       public IEnumerator SuborbitalUntargeted()
-       {
+        }
+        public IEnumerator SuborbitalUntargeted()
+        {
             yield return StartCoroutine(CoastToApoapsis());
             yield return StartCoroutine(Landing());
-
         }
         public IEnumerator CoastToApoapsis()
         {
@@ -63,6 +58,6 @@ namespace Kerbal_Autoland_Mechanisms
             Debug.Log("Burning");
             yield return new WaitUntil(() => vessel.verticalSpeed < -1);
             vessel.ctrlState.mainThrottle = 0;
-        }      
+        }
     }
 }
