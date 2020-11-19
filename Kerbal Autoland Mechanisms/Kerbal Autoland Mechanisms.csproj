@@ -8,7 +8,7 @@
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Kerbal_Autoland_Mechanisms</RootNamespace>
-    <AssemblyName>KerbalAutolandMechanisms</AssemblyName>
+    <AssemblyName>Kerbal Autoland Mechanisms</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -45,32 +45,12 @@
     <Reference Include="UnityEngine">
       <HintPath>F:\Steam\steamapps\common\Kerbal Space Program\KSP_x64_Data\Managed\UnityEngine.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.AssetBundleModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>F:\Steam\steamapps\common\Kerbal Space Program\KSP_x64_Data\Managed\UnityEngine.AssetBundleModule.dll</HintPath>
-    </Reference>
     <Reference Include="UnityEngine.CoreModule">
       <HintPath>F:\Steam\steamapps\common\Kerbal Space Program\KSP_x64_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.UI, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>F:\Steam\steamapps\common\Kerbal Space Program\KSP_x64_Data\Managed\UnityEngine.UI.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AutolandCalculator.cs" />
-    <Compile Include="AutolandModule.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\KAMUIAssembely\KAMUIAssembely.csproj">
-      <Project>{a40d6cb7-644a-4c82-b58b-6e3c770645b1}</Project>
-      <Name>KAMUIAssembely</Name>
-    </ProjectReference>
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <PropertyGroup>
-    <PostBuildEvent>del /f "F:\Steam\steamapps\common\Kerbal Space Program\GameData\KerbalAutolandMechanisms.dll"
-move "C:\Users\Alex\source\repos\Kerbal-Autoland-Mechanisms\Kerbal Autoland Mechanisms\bin\Debug\KerbalAutolandMechanisms.dll" "F:\Steam\steamapps\common\Kerbal Space Program\GameData"</PostBuildEvent>
-  </PropertyGroup>
 </Project>
